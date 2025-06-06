@@ -65,7 +65,7 @@ CREATE OR REPLACE STAGE DATABASE_NAME.SCHEMA_NAME.STAGE_NAME;
 
 ## How to use
 
-1. <pre>CALL DATABASE_NAME.SCHEMA_NAME.STORED_PROCEDURE_NAME('SELECT * FROM MY_DB.MY_SCHEMA.MY_TABLE');</pre> You should see a success message after the query runs.
+1. Insert any valid query into the sp like so: <pre>CALL DATABASE_NAME.SCHEMA_NAME.STORED_PROCEDURE_NAME($$SELECT * FROM MY_DB.MY_SCHEMA.MY_TABLE$$);</pre> You should see a success message after the query runs.
 
 2. Navigate to stage and download file
 ![Screenshot 2025-06-05 at 4 44 23 PM](https://github.com/user-attachments/assets/f2071ec4-c327-4879-9123-5f831b1db9d1)
